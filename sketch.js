@@ -236,7 +236,7 @@ function moveBlocks(){
   if(blocks.y[i]>height){
     blocks.y[i] = random(-H,-50)
     blocks.x[i] = random(20,450)
-    blocks.sp[i] = random(7+level,9+level)
+    blocks.sp[i] = random(6.5+level,8.5+level)
 
     
 if (random(10) < 5) {
@@ -275,7 +275,7 @@ if (xCollision && yCollision){
   // reset after collision
   blocks.y[i] = random(-H,-50)
   blocks.x[i] = random(20,450)
-  blocks.sp[i] = random(7+level,9+level)
+  blocks.sp[i] = random(6.5+level,8.5+level)
 
   if (random(10) < 5) {
     blocks.type[i] = GOOD
