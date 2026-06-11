@@ -162,7 +162,7 @@ function rules(){
   textSize(18)
   text("-Catch the lightning bolts to charge battery",75, 175)
   
-  text("-Avoid virus or lose battery",75, 210)
+  text("-Avoid virus and power outage or lose battery",75, 210)
   text("-Missing bolts will also drop battery", 75,245 )
   text("-Hit 0% and lose, or Hit 100% and win",75, 280)
   text("-Level up overtime for difficulty",75,315)
