@@ -93,3 +93,6 @@ Add power-ups and level variety
 Improve visuals and polish
 Add replayability features (endless mode, achievements, etc.)
 
+# Final Drill 7
+One of the biggest issues was game balancing, so I decided to focus on the speed factors in game, both speed of phone and speed of falling objects. I decided that I would lower the random speeds to 5-7 originally, and then 7-9 as they reset, and this would run throughout my entire game in all levels, so with lower speeds gameplay can feel less intense and more playable
+
