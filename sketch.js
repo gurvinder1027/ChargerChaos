@@ -263,7 +263,7 @@ if (xCollision && yCollision){
   collisionCounter++
 
   if(blocks.type[i] == GOOD){
-    change += 2
+    change += 3
   }
   else if (blocks.img[i] == badImg){
     change -= 4
