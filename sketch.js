@@ -270,7 +270,7 @@ if (xCollision && yCollision){
     change -= 4
   }
   else if (blocks.img[i] == worstImg){
-    change -= 6
+    change -= 8
   }
 
   // reset after collision
