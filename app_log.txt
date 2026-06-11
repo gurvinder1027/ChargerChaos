@@ -96,3 +96,6 @@ Add replayability features (endless mode, achievements, etc.)
 # Final Drill 7
 One of the biggest issues was game balancing, so I decided to focus on the speed factors in game, both speed of phone and speed of falling objects. I decided that I would lower the random speeds to 5-7 originally, and then 7-9 as they reset, and this would run throughout my entire game in all levels, so with lower speeds gameplay can feel less intense and more playable
 
+# Final Drill 8
+To work on game balance more, I decided to make the objects smaller after they reach a certain level, which is level 4. Before, there was still a shrink in size, so it was harder to catch objects, but with the amount of objects in the screen, it was flooded and messy. So, by decreasing the size I can make the game playable without a messy screen. To add some variation I introduced a new block, the "power outage" block which falls under the "BAD" block category, meaning it decreases battery. While the virus dropped battery % by 4, I decided to make the power outage block a rarer but more devastating block that drops % by 6 instead. Also, I edited by home screen by making instructions less wordy and more clear
+
