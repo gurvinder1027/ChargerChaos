@@ -12,6 +12,7 @@ let change= 5
 let blocksCreated = false
 let rectWidth = 0
 
+
 let GOOD = "good"
 let BAD = "bad"
 
@@ -99,7 +100,7 @@ background(150,150,150)
   fill(255)
   text(change +"%", 53,47.5)
   
-  if(collisionCounter >= level*10){
+  if(collisionCounter >= level*8){
     level++
     collisionCounter = 0;
     
@@ -182,15 +183,15 @@ function fillList(blockLimit){
   for(let i=0; i < blockLimit; i++){
     blocks.x.push(random(20,450))
     blocks.y.push(random(-H,0))
-    blocks.sp.push(random(5+level,7+level))
+    blocks.sp.push(random(6+level,7.5+level))
     
     if(blockLimit>7){
       blocks.w.push(random(35,65))
       blocks.h.push(random(35,65))
     }
     else{
-      blocks.w.push(random(70,100))
-      blocks.h.push(random(70,100))
+      blocks.w.push(random(65,95))
+      blocks.h.push(random(65,95))
     }
     if (random(10) > 5) {
   blocks.type.push(BAD)
@@ -236,7 +237,7 @@ function moveBlocks(){
   if(blocks.y[i]>height){
     blocks.y[i] = random(-H,-50)
     blocks.x[i] = random(20,450)
-    blocks.sp[i] = random(6.5+level,8.5+level)
+    blocks.sp[i] = random(7+level,9+level)
 
     
 if (random(10) < 5) {
@@ -263,7 +264,7 @@ if (xCollision && yCollision){
   collisionCounter++
 
   if(blocks.type[i] == GOOD){
-    change += 3
+    change += floor(random(2,4))
   }
   else if (blocks.img[i] == badImg){
     change -= 4
@@ -275,7 +276,7 @@ if (xCollision && yCollision){
   // reset after collision
   blocks.y[i] = random(-H,-50)
   blocks.x[i] = random(20,450)
-  blocks.sp[i] = random(6.5+level,8.5+level)
+  blocks.sp[i] = random(7+level,9+level)
 
   if (random(10) < 5) {
     blocks.type[i] = GOOD
