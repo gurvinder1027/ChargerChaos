@@ -183,7 +183,7 @@ function fillList(blockLimit){
   for(let i=0; i < blockLimit; i++){
     blocks.x.push(random(20,450))
     blocks.y.push(random(-H,0))
-    blocks.sp.push(random(6+level,7.5+level))
+    blocks.sp.push(random(6+level,7+level))
     
     if(blockLimit>7){
       blocks.w.push(random(35,65))
@@ -237,7 +237,7 @@ function moveBlocks(){
   if(blocks.y[i]>height){
     blocks.y[i] = random(-H,-50)
     blocks.x[i] = random(20,450)
-    blocks.sp[i] = random(7+level,9+level)
+    blocks.sp[i] = random(6+level,8+level)
 
     
 if (random(10) < 5) {
@@ -276,7 +276,7 @@ if (xCollision && yCollision){
   // reset after collision
   blocks.y[i] = random(-H,-50)
   blocks.x[i] = random(20,450)
-  blocks.sp[i] = random(7+level,9+level)
+  blocks.sp[i] = random(6+level,8+level)
 
   if (random(10) < 5) {
     blocks.type[i] = GOOD
